@@ -1,0 +1,10 @@
+-- 右下角的进度条，但是好像重复了，但是不知道和哪个插件重复了
+local M = {
+ 'j-hui/fidget.nvim',
+}
+
+M.config = function ()
+  require"fidget".setup{}
+end
+
+return M
