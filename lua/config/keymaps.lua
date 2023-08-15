@@ -55,11 +55,14 @@ map("n", "Q", ":Bdelete<CR>", opts)
 
 -- Visual Block --
 -- Move text up and down, it looks cool, but not a frequent opts
-map("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-map("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+--map("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
+--map("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- aerial --
 map("n", "T", "<cmd>AerialToggle!<CR>")
+
+-- undotree --
+map("n", "<F7>", "<cmd>lua require('undotree').toggle()<CR>", opts)
 
 -- zen-mode --
 map("n", "<C-x>", "<cmd>ZenMode<cr>", opts)
