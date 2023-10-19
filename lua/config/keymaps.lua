@@ -66,3 +66,6 @@ map("n", "<F7>", "<cmd>lua require('undotree').toggle()<CR>", opts)
 
 -- zen-mode --
 map("n", "<C-x>", "<cmd>ZenMode<cr>", opts)
+
+-- neo-tree
+map("n", "<C-n>", "<cmd>Neotree<cr>", opts)
