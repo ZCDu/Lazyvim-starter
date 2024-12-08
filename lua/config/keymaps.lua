@@ -16,6 +16,7 @@ local opts = { noremap = true, silent = true }
 local nopts = { noremap = true }
 
 map("n", "s", "<nop>", {})
+map("n", "<S-t>", "<nop>", {})
 
 -- window navigation supplementary --
 -- <C-jkhl> to change current cursor to other window
@@ -59,7 +60,8 @@ map("n", "Q", ":Bdelete<CR>", opts)
 --map("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- aerial --
-map("n", "T", "<cmd>AerialToggle!<CR>")
+map("n", "<S-t>", "<cmd>AerialToggle!<CR>")
+map("n", "<C-a>", "<cmd>AerialToggle!<CR>")
 
 -- undotree --
 map("n", "<F7>", "<cmd>lua require('undotree').toggle()<CR>", opts)
